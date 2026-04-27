@@ -103,7 +103,7 @@ public class ProblemSet {
         }
         
         System.out.println("\nTotal Score: " + score); //Game end message
-        if (roundNumber % 2 > score) {
+        if (score < roundNumber / 2.0) {
             System.out.println("You got " + score + " out of " + roundNumber + " correct. Better Luck next time.");
         }
         else {
